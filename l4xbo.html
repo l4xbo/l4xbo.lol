@@ -1,6 +1,3 @@
-
- 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,100 +46,107 @@
         .btn-link {
             background-color: Transparent;
         }
-  
-  * {
-        cursor: url("") 16 16, auto !important
-      }
+
+        * {
+            cursor: url("") 16 16, auto !important
+        }
+
         body {
             background-color: #0d0d0e;
             background-size: cover
         }
 
-
         .musicbtn {
             background: #000
         }
-    </style>    
-        <div class="bg" style="background-image: url(https://i.pinimg.com/originals/76/9c/32/769c32c0e4d0600cdbd38218709e7511.gif);"></div>
-
-        
-    <body>
-        <header>
-            <nav>
-                <div class="header_logo"><img src="https://pluspng.com/img-png/transparent-png-hd-dates-hd-2008-0075-png-1280.png" alt="" srcset=""></div>
-                <div class="header_links">
-                    <ul class="nav_links">
-                        <li class="nav_link"><a href="https://l4xbo.lol">Home</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <div class>
-            <div class="center">
-   <div class="overlay" id="overlay">
-        <div class="proceed-button" onclick="removeOverlay(); playMusic()"><p style="font-family: 'MC'; color: white; font-size: 50px;">Click</p></div>
+    </style>
+    <div class="bg">
+        <video autoplay muted loop id="background-video">
+            <source src="video/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-    <script>
-        function removeOverlay() {
-            var overlay = document.getElementById("overlay");
-            overlay.style.display = "none";
-        }
+    <header>
+        <nav>
+            <div class="header_logo"><img src="https://pluspng.com/img-png/transparent-png-hd-dates-hd-2008-0075-png-1280.png" alt="" srcset=""></div>
+            <div class="header_links">
+<ul class="nav_links">
+    <li class="nav_link"><a href="https://l4xbo.lol">Home</a></li>
+</ul>
 
-        function playMusic() {
-            var audio = new Audio("https://dl.sndup.net/kphk/rape.mp3");
-         audio.play();
-        }
-    </script>      
-                <div class="container blur"><img class="pfp-image" style="border: 0px solid #1f202038;" src="https://i.pinimg.com/564x/e5/33/6a/e5336a5c0c1000cb15109d9963441e64.jpg" alt="pfp">
-                    <p class="username"><span class="sparkle">l4xbo </span>
-                    <p class="bio-text">@l4xbo</p>
-                    <div class="socials">
-                        <div class="tooltip"><a><span id="copyclipboard" class="tooltiptext">l4xbo</span><i id="disc" class="fa-brands fa-discord social-icons"></i></a></div>
-                        <div class="tooltip"><a target="_blank" href="https://www.roblox.com/users/3749022815/profile"><span class="tooltiptext">roblox</span><i class="fa-solid fa-user social-icons"></i></a></div>
-                    </div><img class="discord-widget" src="https://discord.c99.nl/widget/theme-4/1141587319359541360.png" alt="Discord Widget">
-                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class>
+        <div class="center">
+            <div class="overlay" id="overlay">
+                <div class="proceed-button" onclick="removeOverlay(); playMedia()"><p style="font-family: 'MC'; color: white; font-size: 50px;">Click</p></div>
+            </div>
+            <script>
+                function removeOverlay() {
+                    var overlay = document.getElementById("overlay");
+                    overlay.style.display = "none";
+                }
+
+                function playMedia() {
+                    var audio = new Audio("video/background.mp4");
+                    audio.play();
+                    var video = document.getElementById("background-video");
+                    video.play();
+                }
+            </script>
+            <div class="container blur"><img class="pfp-image" style="border: 0px solid #1f202038;" src="https://i.pinimg.com/564x/e5/33/6a/e5336a5c0c1000cb15109d9963441e64.jpg" alt="pfp">
+                <p class="username"><span class="sparkle">l4xbo </span>
+                <p class="bio-text">@l4xbo</p>
+                <div class="socials">
+                    <div class="tooltip"><a><span id="copyclipboard" class="tooltiptext">l4xbo</span><i id="disc" class="fa-brands fa-discord social-icons"></i></a></div>
+                    <div class="tooltip"><a target="_blank" href="https://www.roblox.com/users/3749022815/profile"><span class="tooltiptext">roblox</span><i class="fa-solid fa-user social-icons"></i></a></div>
+                </div><img class="discord-widget" src="https://discord.c99.nl/widget/theme-4/1141587319359541360.png" alt="Discord Widget">
             </div>
         </div>
-          <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
-            <div class="snowflake">
-                ♰
-            </div>
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ♰
         </div>
-        <script src="js/bat.js"></script>
-        <script src="js/cursor.js"></script>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+        <div class="snowflake">
+            ♰
+        </div>
+    </div>
+    <script src="js/bat.js"></script>
+    <script src="js/cursor.js"></script>
+
+</body>
 
 </html>
