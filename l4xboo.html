@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en" theme="Gray"><head>
+    <meta charset="utf-8">
+    <title>gino</title>
+    <meta property="og:title" content="l4xbo.lol">
+    <meta content="??" property="og:title">
+    <meta content="gino @ ritua.ls" property="og:description">
+    <meta content="#606582" data-react-helmet="true" name="theme-color">
+    <meta name="description" content="l4xbo= (l4xbo.lol)">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <script src="js/jquery.min.js" type="be8c3e83a73b72c46146205e-text/javascript"></script>
+    <script src="js/ionicons.min.js" type="be8c3e83a73b72c46146205e-text/javascript"></script>
+    <script src="js/icons.js" type="be8c3e83a73b72c46146205e-text/javascript"></script>
+    <link rel="stylesheet" href="css/biolink.css">
+    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool" type="be8c3e83a73b72c46146205e-text/javascript"></script>
+    <script src="js/script.js" type="be8c3e83a73b72c46146205e-text/javascript"></script>
+</head>
+<body oncontextmenu="if (!window.__cfRLUnblockHandlers) return false; return false" class="killwtf" style="background-image: url('media/bksj3u.mp4'); background-size: 100%; background-position: center; background-repeat: no-repeat;" data-cf-modified-be8c3e83a73b72c46146205e-="">
+    
+    
+    <audio id="audio" src="media/b6c32d4d1f526f60.mp3" onended="if (!window.__cfRLUnblockHandlers) return false; handleMediaEnd()" data-cf-modified-be8c3e83a73b72c46146205e-=""></audio>
+    <video class="background" id="background" loop="" muted="" onended="if (!window.__cfRLUnblockHandlers) return false; handleMediaEnd()" data-cf-modified-be8c3e83a73b72c46146205e-="">
+        <source id="videoSource" type="video/mp4">
+    </video>
+    
+    <div id="pattern"></div>
+    
+    <div class="clickanywhere">
+        <h4 style="color: white; font-size: 18px; text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000; ">[TAPN]</h4>
+    </div>
+    
+    <main>
+        <div scroll="no" id="biolink" class="biolink" style="display:none; overflow: hidden; position: relative;   box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;">
+            <div style="position: absolute; bottom: 10px; left: 10px; color: white; display: flex; align-items: center;">
+                <i class="ri-eye-line" style="margin-right: 5px;"></i> 69
+            </div>
+            <div scroll="no" id="biolink" class="card">
+                
+                <div class="profile-section">
+                    <img src="https://i.pinimg.com/564x/66/e7/fe/66e7fe4d45350dfe9b0194cc2e12bfaf.jpg" alt="Profile Picture" draggable="false" class="profile-picture">
+                    <h1 class="centered-text">l4xbo</h1>
+                    
+                    <h2 class="centered-text" style="font-size: 14px;">#4</h2>
+                    
+                    
+                    <p class="quote">quit</p>
+                    
+                    <hr>
+                </div>
+                
+                <div class="social-links">
+                    
+                        <a href="l4xq" target="_blank" id="discordIcon">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" id="youtubeIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="be8c3e83a73b72c46146205e-text/javascript">
+        const user = {
+            username: "l4xbo",
+            animated_title: "l4xbo",
+        };
+    
+        const title = "l4xbo" !== "None" ? "l4xbo" : "l4xbo";
+    
+        var background = "https://files.catbox.moe/bksj3u.mp4";
+    
+        function animateTitle() {
+            const text = title;
+            let currentIndex = 0;
+            let reverse = false;
+    
+            function updateTitle() {
+                if (reverse) {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        reverse = false;
+                    }
+                } else {
+                    currentIndex++;
+                    if (currentIndex >= text.length) {
+                        reverse = true;
+                    }
+                }
+    
+                const newText = text.substring(0, currentIndex);
+    
+                if (newText.length === 0) {
+                    document.title = "_";
+                } else {
+                    document.title = newText;
+                }
+    
+                setTimeout(updateTitle, 300);
+            }
+    
+            updateTitle();
+        }
+    
+        animateTitle();
+    
+        var isMediaPlaying = false;
+    
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+    
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+    
+        document.onkeydown = (e) => {
+            if (
+                event.keyCode === 123 ||
+                ctrlShiftKey(e, 'I') ||
+                ctrlShiftKey(e, 'J') ||
+                ctrlShiftKey(e, 'C') ||
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+                return false;
+        };
+    
+        function playMedia() {
+            var audioElement = document.getElementById("audio");
+            var videoElement = document.getElementById("background");
+    
+            if (audioElement && videoElement) {
+                var audioSrc = "https://files.ritua.ls/uploads/b6c32d4d1f526f60.mp3";
+                var backgroundSrc = "https://files.catbox.moe/bksj3u.mp4";
+    
+                if (audioSrc) {
+                    audioElement.src = audioSrc;
+                    audioElement.play().catch(error => {
+                        console.error("Audio play error:", error);
+                    });
+                    isMediaPlaying = true;
+                }
+    
+                if (backgroundSrc && (backgroundSrc.endsWith(".mp4") || backgroundSrc.endsWith(".gif"))) {
+                    videoElement.removeAttribute("hidden");
+                    videoElement.src = backgroundSrc;
+                    videoElement.play().catch(error => {
+                        console.error("Background play error:", error);
+                    });
+                    videoElement.volume = 0.6;
+                    isMediaPlaying = true;
+                }
+            }
+        }
+    
+        function handleMediaEnd() {
+            playMedia();
+        }
+    
+        document.querySelector('.killwtf').addEventListener('click', function () {
+            if (!isMediaPlaying) {
+                playMedia();
+            }
+        });
+    
+        document.getElementById("background").addEventListener("click", function (e) {
+            if (isMobileDevice()) {
+                e.preventDefault();
+                e.stopPropagation();
+                playMedia();
+            }
+        });
+    
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+    
+        $(document).ready(function () {
+            $(document.body).click(function () {
+                $(".clickanywhere").fadeOut(300);
+                $(".biolink").fadeIn(2000);
+            });
+        });
+    
+        window.addEventListener('load', setRandomVideoSource);
+
+        // Additional logic to mute the background video when audio is playing
+        document.getElementById("audio").addEventListener("play", function() {
+            var videoElement = document.getElementById("background");
+            if (videoElement) {
+                videoElement.muted = true;
+            }
+        });
+
+        document.getElementById("audio").addEventListener("pause", function() {
+            var videoElement = document.getElementById("background");
+            if (videoElement) {
+                videoElement.muted = false;
+            }
+        });
+
+        document.getElementById("audio").addEventListener("ended", function() {
+            var videoElement = document.getElementById("background");
+            if (videoElement) {
+                videoElement.muted = false;
+            }
+        });
+
+    </script>
+<script src="js/rocket-loader.min.js" data-cf-settings="be8c3e83a73b72c46146205e-|49" defer=""></script>
+</body></html>
